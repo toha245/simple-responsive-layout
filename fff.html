@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Tasks</title>
+    <style>
+        .container {
+            border: 2px solid salmon;
+            margin: 10px;
+            padding: 30px;
+        }
+
+        .container .box-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 550px;
+            gap: 30px;
+        }
+
+        .lekha {
+            background-color: rgb(196, 238, 250);
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+
+        .box-1 {
+            height: 550px;
+            padding-right: 183px;
+            padding-left: 183px;
+            background-color: #cccccc; /* গ্রে কালার Left এর জন্য */
+            border: none;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .box-2 {
+            height: 550px;
+            padding-right: 366px;
+            padding-left: 366px;
+            width: 366px;
+            background-color: #f3f6d1; /* হালকা সবুজ Right এর জন্য */
+            border: none;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container .box-container {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+            }
+
+            .box-1, .box-2 {
+                padding: 0;
+                width: 90%;
+                border-radius: 10px;
+            }
+
+            .box-1 {
+                height: 120px; /* মোবাইলে Left ছোট */
+            }
+
+            .box-2 {
+                height: 300px; /* মোবাইলে Right বড় */
+                padding: 0;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="box-container">
+                <div class="box-1"><p class="lekha">Left</p></div>
+                <div class="box-2"><p class="lekha">Right</p></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
