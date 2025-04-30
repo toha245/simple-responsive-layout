@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth Task</title>
+    <style>
+        section{
+            width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: 5%;
+        }
+
+        .first-box{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2%;
+        }
+
+
+        .second-box{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-container img{
+            width: 400px;
+            height: 228px;
+        }
+
+        .second-part{
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-container button{
+            padding: 5px;
+            border: none;
+            background-color: yellowgreen;
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 992px) {
+            
+        section{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5%;
+            margin-left: 0;
+            padding: 0;
+            
+        }
+            
+        .first-box{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5%;
+        }
+        .second-box{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-container img{
+            width: 100%;
+            height: auto;
+            
+        }
+
+        .second-part{
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-container button{
+            padding: 5px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="first-box">
+            <div class="image-container">
+                <img src="images/premium_photo-1683619761468-b06992704398.avif" alt="">
+            </div>
+            <div class="second-part">
+                <h1>Beef Burger</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque ut officiis obcaecati cumque perferendis tenetur quae deleniti eos debitis non.</p>
+                <div class="btn-container"><button>Buy Now</button></div>
+            </div>
+            
+        </div>
+        <div class="second-box">
+            <div class="image-container">
+                <img src="images/premium_photo-1683619761468-b06992704398.avif" alt="">
+            </div>
+            <div class="second-part">
+                <h1>Chicken Burger</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque ut officiis obcaecati cumque perferendis tenetur quae deleniti eos debitis non.</p>
+                <div class="btn-container"><button>Buy Now</button></div>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
